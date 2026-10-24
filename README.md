@@ -8,7 +8,7 @@ Pure HTML, CSS & JavaScript (no libraries) + a bonus Python turtle version.</p>
   <a href="https://github.com/hackncode1020/cosmic-tree-24-10-26/archive/refs/heads/main.zip">⬇ Download ZIP</a>
 </p>
 
-<p align="center"><img src="assets/preview-mobile.jpg" width="320" alt="Cosmic Tree running on a phone"></p>
+<p align="center"><img src="assets/preview.gif" width="300" alt="Cosmic Tree growing animation"> &nbsp; <img src="assets/preview-mobile.jpg" width="300" alt="Cosmic Tree running on a phone"></p>
 
 ## ✨ Features
 - 🌱 The tree **grows live** from its roots: recursive branches drawn segment by segment with neon glow
