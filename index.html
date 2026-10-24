@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#05030f">
+<title>Cosmic Tree 🌌 — Coded by @hack.n.code</title>
+<meta name="description" content="A neon tree grows from glowing roots, branches out under the stars and bursts into glowing blossoms. Pure HTML, CSS and JavaScript, coded by @hack.n.code.">
+<meta property="og:title" content="Cosmic Tree 🌌 — Coded by @hack.n.code">
+<meta property="og:description" content="Watch a galaxy tree grow from its roots and blossom. Tap anywhere for magic.">
+<meta property="og:image" content="og.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%B3%3C/text%3E%3C/svg%3E">
+<link rel="preload" href="fonts/DancingScript.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main id="app">
+  <canvas id="scene" aria-label="A glowing tree growing from its roots and blossoming under a starry sky" role="img"></canvas>
+
+  <header class="tag" aria-hidden="true"><span class="code">&lt;/&gt;</span> cosmic-tree.js</header>
+
+  <section class="message" id="message" aria-live="polite">
+    <p class="for" id="forLine">Cosmic Tree</p>
+    <p class="line" id="typeLine"></p>
+    <p class="hint" id="hint">tap anywhere ✨</p>
+  </section>
+
+  <nav class="controls" id="controls" aria-label="Controls">
+    <button type="button" id="regrow" class="btn">↻ <span>grow again</span></button>
+    <button type="button" id="send" class="btn btn-main">💌 <span>send to someone</span></button>
+    <button type="button" id="sound" class="btn" aria-pressed="false" aria-label="Music on or off">♪ <span id="soundLabel">music</span></button>
+  </nav>
+
+  <footer class="credit">
+    Coded by <a href="https://www.instagram.com/hack.n.code/" target="_blank" rel="noopener">@hack.n.code</a>
+  </footer>
+
+  <dialog id="sheet" class="sheet">
+    <form method="dialog" id="sheetForm">
+      <h2>Grow a tree for someone 🌌</h2>
+      <label for="nameInput">Their name</label>
+      <input id="nameInput" name="name" maxlength="24" autocomplete="off" placeholder="e.g. Riya">
+      <p class="small">They'll open a cosmic tree that grows <em>for them</em>.</p>
+      <div class="row">
+        <button type="button" id="cancelSheet" class="btn">cancel</button>
+        <button type="submit" id="shareBtn" class="btn btn-main">share link</button>
+      </div>
+      <p class="small out" id="shareOut" aria-live="polite"></p>
+    </form>
+  </dialog>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
